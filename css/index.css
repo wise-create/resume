@@ -1,4 +1,99 @@
 @charset "UTF-8";
 @import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body, html, #wrap { height: 100%;}
+.row { max-width: 1200px; margin: 0 auto; padding: 0 10px;}
+
+/* header구역 */
+.header-outer { background: rgba(255, 255, 255, 1);
+    width: 100%; position: fixed; z-index: 9999;}
+#header { height: 80px; position: relative;}
+#header h1{ font-family: 'Oswald', sans-serif;
+    font-size: 40px; padding-top: 5px;}
+#header .open-gnb { display: none; color: #000;}
+#header .nav { position: absolute; 
+    top: 50%; right: 0; transform: translateY(-50%);}
+#header .nav .depth1 > li { display: inline-block;}
+#header .nav .depth1 > li a {
+    font-size: 18px; padding: 0 40px;
+    font-family: 'Open Sans', sans-serif;}
+
+/* outlayer구역 */
+.outlayer { display: none;
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;}
+.outlayer.on { display: block;}
+
+/* section구역 */
+.section-outer { height: 100%;}
+.section-outer .section { height: 100%;}
+/* slide구역 */
+.section-outer .section:nth-child(1) .slide-outer { height: 100%;}
+.section-outer .section:nth-child(1) .slide-inner { height: 100%;}
+.section-outer .section:nth-child(1) .slide { height: 100%;
+    background-size: cover; background-repeat: no-repeat;
+    background-position: center;}
+.section-outer .section:nth-child(1) .slide1 {
+    background-image: url(../images/sample1.jpg);}
+.section-outer .section:nth-child(1) .slide2 {
+    background-image: url(../images/sample2.jpg);}
+/* /* 화살표 버튼 */
+.slide-outer { position:relative }
+.slide-outer .marrow { 
+    font-size:80px; color:#fff; 
+    position:absolute; top:50%;
+    transform:translateY(-50%); 
+    background:none; }
+.slide-outer .prevArrow { left:10%; z-index:99999 }    
+.slide-outer .nextArrow { right:10% }
+/* 도트 버튼 */
+.slide-outer .slick-dots { 
+    position:absolute; bottom:20px; width:100%;
+    text-align:center }
+.slide-outer .slick-dots li {
+    display:inline-block; }    
+.slide-outer .slick-dots li button {
+    width:15px; height:15px; border-radius:50%;
+    background:#fff; text-indent:-99999px;
+    overflow:hidden; margin:0 5px;}
+.slide-outer .slick-dots li.slick-active button { 
+    background:#f00; width:40px; 
+    border-radius:50px;
+} */
+
+
+
+
+
+
+
+
+
+
+.section-outer .section:nth-child(2) { background: yellowgreen;}
+.section-outer .section:nth-child(3) { background: wheat;}
+.section-outer .section:nth-child(4) { background: violet;}
+.section-outer .section:nth-child(5) { background: yellow;}
+
+
+
+
+
+
+/* footer구역 */
+.footer-outer { height: 40px; background: #000;}
+#footer { color: #fff;}
+
+
+/* gotop 버튼 */
+/* .gotop { display: none;
+    position: fixed;
+    bottom: 40px; right: 20px;
+    z-index: 999;}
+.gotop.on { display: block;}
+.gotop a { font-size: 40px; color: #333;}
+.gotop a {color: rgb(75,124,215);} */

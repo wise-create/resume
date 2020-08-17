@@ -1,0 +1,45 @@
+@media only screen and (max-width: 900px) {
+    #header .nav .depth1 > li a {
+        font-size: 18px; padding: 0 20px;
+        font-family: 'Open Sans', sans-serif;}
+}
+
+@media only screen and (max-width: 700px) {
+    #header { height: 80px; position: relative;}
+    #header.on { overflow:visible; }
+    #header h1{ font-family: 'Oswald', sans-serif;
+        font-size: 40px; padding-top: 5px;
+        text-align: center;}
+    #header .open-gnb { display: block;
+        position: absolute;
+        top: 50%; right: 15px;
+        transform: translateY(-50%);
+        width: 25px; height: 17px;
+        z-index: 99999;}
+    #header.on .open-gnb span { display: block;
+        width: 25px; height: 3px;
+        background: #000; margin-bottom: 4px;
+        border-radius: 10px;}
+    #header.on .open-gnb span:nth-of-type(2) { display: none;}
+    #header.on .open-gnb span:nth-of-type(1) {
+        transform: rotate(45deg);
+        position: absolute;
+        top: 10px; left: 10px;}
+    #header.on .open-gnb span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 10px; left: 10px;}
+    #header .nav { display: none;
+        background: rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 80px; right: -320px; transform: translateY(0%);
+        text-align: center;
+        min-width: 320px; height: 100%;
+        padding-top: 40px;}
+    #header.on nav { display: block;}
+    #header .nav .depth1 > li { display: block;}
+    #header .nav .depth1 > li a {
+        font-size: 18px; padding: 10px 20px;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;}
+}
