@@ -83,7 +83,17 @@
         nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>'
     })
 
-
+    // toggle메서드를 사용하기 위해서는 jquery-migrate-1.4.1.min.js을 연결해야함
+    $('.plpa').toggle(
+        function(){
+            $(this).find('i').removeClass('fa-pause').addClass('fa-play')
+            $('.slide-inner').slick('slickPause')
+        },
+        function(){
+            $(this).find('i').removeClass('fa-play').addClass('fa-pause')
+            $('.slide-inner').slick('slickPlay')
+        }
+    )
 
 
 

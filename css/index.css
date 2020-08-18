@@ -36,13 +36,14 @@ body, html, #wrap { height: 100%;}
 .section-outer .section:nth-child(1) .slide-inner { height: 100%;}
 .section-outer .section:nth-child(1) .slide { height: 100%;
     background-size: cover; background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;
+    position: relative;}
 .section-outer .section:nth-child(1) .slide1 {
     background-image: url(../images/sample1.jpg);}
 .section-outer .section:nth-child(1) .slide2 {
     background-image: url(../images/sample2.jpg);}
 /* 화살표 버튼 */
-.slide-outer { position:relative }
+.slide-outer { position:relative;}
 .slide-outer .marrow { 
     font-size:80px; color: rgba(0, 0, 0, 0.5); 
     position:absolute; top:50%;
@@ -62,8 +63,29 @@ body, html, #wrap { height: 100%;}
     overflow:hidden; margin:0 5px;}
 .slide-outer .slick-dots li.slick-active button { 
     background: rgba(0, 0, 0, 0.5); width:40px; 
-    border-radius:50px;
-} */
+    border-radius:50px;}
+/* 슬라이드 텍스트 */
+.slide-outer .slide .text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%; transform: translateY(-50%);
+    opacity: 0; color: #000;}
+.slide-outer .slide.slick-active .text{ opacity: 1;}
+.slide-outer .slide .text p {
+    font-size: 4vw;
+}
+.slide-outer .slide.slick-active .text p {
+    animation: fadeInRight 1s both 1s;}
+/* 슬라이드 재생멈춤 버튼 */
+.slide-outer .plpa { 
+    font-size: 15px; color: #fff;
+    background: none;
+    position: absolute;
+    bottom: 20px; left: 50%;
+    margin-left: 55px;
+}
+
 
 
 
