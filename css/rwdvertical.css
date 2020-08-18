@@ -1,7 +1,6 @@
 @media only screen and (max-width: 900px) {
     #header .nav .depth1 > li a {
-        font-size: 18px; padding: 0 20px;
-        font-family: 'Open Sans', sans-serif;}
+        font-size: 18px; padding: 0 20px;}
 }
 
 @media only screen and (max-width: 700px) {
@@ -40,8 +39,8 @@
     #header.on .nav { display: block;}
     #header .nav .depth1 > li { display: block;}
     #header .nav .depth1 > li > a {
-        font-size: 20px; padding: 30px 20px;
-        font-family: 'Open Sans', sans-serif;
+        font-size: 25px; padding: 40px 20px;
         color: #333; display: block;
-    }
+        transition: all 0.5s ease-in-out;}
+    #header .nav .depth1 > li > a:hover { font-weight: normal;}
 }
