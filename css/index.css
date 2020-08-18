@@ -28,8 +28,8 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif;}
 #header .nav .depth1 > li > a:before {
     content: '';
     position: absolute;
-    top: 50%; left: 0;
-    transform: translateY(-50%);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
     width: 0%; height: 20px;
     transition: all 0.5s ease-in-out;}
 #header .nav .depth1 > li > a:hover:before,
@@ -48,6 +48,11 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif;}
 /* section구역 */
 .section-outer { height: 100%;}
 .section-outer .section { height: 100%;}
+.section-outer .section h2 {
+    font-size: 3.75vw;
+    text-align: center;
+    padding: 30px 0;
+}
 /* slide: section1 */
 .section-outer .section:nth-child(1) .slide-outer { height: 100%;}
 .section-outer .section:nth-child(1) .slide-inner { height: 100%;}
@@ -117,30 +122,40 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif;}
     width: 100%;
     text-align: center;
     top: 50%; transform: translateY(-50%);
-    opacity: 0; color: #000;}
+    opacity: 0; color: #fff;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
 .slide-outer .slide.slick-active .text{ opacity: 1;}
 .slide-outer .slide .text p {
-    font-size: 4vw;}
+    font-size: 5vw;}
 .slide-outer .slide.slick-active .text p {
-    animation: fadeInRight 1s both 1s;
+    animation: fadeInUp 1s both 1s;
 }
 
 /* about : section2 */
-.about h2 { 
+/* .about h2 { 
     font-size: 3.75vw;
     text-align: center;
-    padding: 30px 0;}
+    padding: 30px 0;} */
 .about .profile > div { 
     float: left; width: 50%;}
 .about .profile .pf-text {
-    text-align: center;
+    padding-left: 50px;
 }
 
 
-
-
-
+/* portfolio : section3 */
 .section-outer .section:nth-child(3) { background: wheat;}
+/* .portfolio h2 {
+    font-size: 3.75vw;
+    text-align: center;
+    padding: 30px 0;
+}
+ */
+
+
+
 .section-outer .section:nth-child(4) { background: violet;}
 .section-outer .section:nth-child(5) { background: yellow;}
 
