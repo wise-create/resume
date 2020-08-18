@@ -42,5 +42,6 @@
     #header .nav .depth1 > li > a {
         font-size: 20px; padding: 30px 20px;
         font-family: 'Open Sans', sans-serif;
-        color: #333; display: block;}
+        color: #333; display: block;
+    }
 }

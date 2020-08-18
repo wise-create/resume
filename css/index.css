@@ -52,7 +52,7 @@ body, html, #wrap { height: 100%;}
 .slide-outer .prevArrow { left:10%; z-index:9 }    
 .slide-outer .nextArrow { right:10% }
 /* 도트 버튼 */
-.slide-outer .slick-dots { 
+/* .slide-outer .slick-dots { 
     position:absolute; bottom:20px; width:100%;
     text-align:center }
 .slide-outer .slick-dots li {
@@ -63,7 +63,37 @@ body, html, #wrap { height: 100%;}
     overflow:hidden; margin:0 5px;}
 .slide-outer .slick-dots li.slick-active button { 
     background: rgba(0, 0, 0, 0.5); width:40px; 
-    border-radius:50px;}
+    border-radius:50px;} */
+/* 도트버튼을 막대 형태로 애니메이션 */
+.slide-outer .slick-dots { 
+    position:absolute; bottom:20px; width:100%;
+    text-align:center }
+.slide-outer .slick-dots li {
+    display:inline-block; 
+    width: 100px; height: 3px;
+    background: #fff;
+    margin: 0 5px;
+    position: relative;}
+.slide-outer .slick-dots li button {
+    width:0%; height:3px;
+    text-indent:-99999px;
+    overflow:hidden;
+    position: absolute;
+    top: 0; left: 0;}
+.slide-outer .slick-dots li.slick-active button { 
+    background: #000;
+    animation: progressbar 4.5s both;}
+@keyframes progressbar {
+    0% { width: 0%;}
+    100% { width: 100%;}
+}
+/* 슬라이드 재생멈춤 버튼 */
+.slide-outer .plpa { 
+    font-size: 15px; color: #fff;
+    background: none;
+    position: absolute;
+    bottom: 18px; left: 50%;
+    margin-left: 130px;}
 /* 슬라이드 텍스트 */
 .slide-outer .slide .text {
     position: absolute;
@@ -73,19 +103,10 @@ body, html, #wrap { height: 100%;}
     opacity: 0; color: #000;}
 .slide-outer .slide.slick-active .text{ opacity: 1;}
 .slide-outer .slide .text p {
-    font-size: 4vw;
-}
+    font-size: 4vw;}
 .slide-outer .slide.slick-active .text p {
-    animation: fadeInRight 1s both 1s;}
-/* 슬라이드 재생멈춤 버튼 */
-.slide-outer .plpa { 
-    font-size: 15px; color: #fff;
-    background: none;
-    position: absolute;
-    bottom: 20px; left: 50%;
-    margin-left: 55px;
+    animation: fadeInRight 1s both 1s;
 }
-
 
 
 
