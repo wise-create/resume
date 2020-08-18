@@ -12,11 +12,11 @@ body, html, #wrap { height: 100%;}
 #header { height: 80px; position: relative;}
 #header h1{ font-family: 'Oswald', sans-serif;
     font-size: 40px; padding-top: 5px;}
-#header .open-gnb { display: none; color: #000;}
+#header .open-gnb { display: none;}
 #header .nav { position: absolute; 
     top: 50%; right: 0; transform: translateY(-50%);}
 #header .nav .depth1 > li { display: inline-block;}
-#header .nav .depth1 > li a {
+#header .nav .depth1 > li > a {
     font-size: 18px; padding: 0 40px;
     font-family: 'Open Sans', sans-serif;}
 
@@ -41,10 +41,10 @@ body, html, #wrap { height: 100%;}
     background-image: url(../images/sample1.jpg);}
 .section-outer .section:nth-child(1) .slide2 {
     background-image: url(../images/sample2.jpg);}
-/* /* 화살표 버튼 */
+/* 화살표 버튼 */
 .slide-outer { position:relative }
 .slide-outer .marrow { 
-    font-size:80px; color:#fff; 
+    font-size:80px; color: rgba(0, 0, 0, 0.5); 
     position:absolute; top:50%;
     transform:translateY(-50%); 
     background:none; }
@@ -61,7 +61,7 @@ body, html, #wrap { height: 100%;}
     background:#fff; text-indent:-99999px;
     overflow:hidden; margin:0 5px;}
 .slide-outer .slick-dots li.slick-active button { 
-    background:#f00; width:40px; 
+    background: rgba(0, 0, 0, 0.5); width:40px; 
     border-radius:50px;
 } */
 
@@ -84,16 +84,10 @@ body, html, #wrap { height: 100%;}
 
 
 
-/* footer구역 */
-.footer-outer { height: 40px; background: #000;}
-#footer { color: #fff;}
-
 
 /* gotop 버튼 */
-/* .gotop { display: none;
+/* .gotop { display: block;
     position: fixed;
     bottom: 40px; right: 20px;
     z-index: 999;}
-.gotop.on { display: block;}
-.gotop a { font-size: 40px; color: #333;}
-.gotop a {color: rgb(75,124,215);} */
+.gotop a { font-size: 40px; color: #333;} */
