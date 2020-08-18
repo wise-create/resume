@@ -37,8 +37,7 @@ footer, header, hgroup, menu, nav, section {
 .blind { position:absolute; width:0; height:0;
     overflow:hidden; text-indent:-9999px;
     font-size:0px; line-height:0; }
-h1, h2, h3, h4, h5, h6, pre, textarea {
-    font-size: 100%; }    
+h1, h2, h3, h4, h5, h6, pre, textarea { font-size: 100%;}
 address, em { font-style:normal }    
 strong, th { font-weight:normal }
 

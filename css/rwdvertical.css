@@ -8,8 +8,8 @@
     #header { height: 80px; position: relative;}
     #header.on { overflow:visible; }
     #header h1{ 
-        font-family: 'Oswald', sans-serif;
-        font-size: 40px; padding-top: 5px;
+        font-family: 'Lobster', cursive;
+        font-size: 40px; padding-top: 10px;
         text-align: center;
     }
     #header .open-gnb { 

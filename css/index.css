@@ -2,23 +2,26 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-body, html, #wrap { height: 100%;}
+body, html, #wrap { height: 100%; font-family: 'Open Sans', sans-serif;}
+h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif;}
 .row { max-width: 1200px; margin: 0 auto; padding: 0 10px;}
 
 /* header구역 */
 .header-outer { background: rgba(255, 255, 255, 1);
     width: 100%; position: fixed; z-index: 9999;}
 #header { height: 80px; position: relative;}
-#header h1{ font-family: 'Oswald', sans-serif;
-    font-size: 40px; padding-top: 5px;}
+#header h1{
+    font-family: 'Lobster', cursive;
+    font-size: 40px; padding-top: 10px;}
 #header .open-gnb { display: none;}
 #header .nav { position: absolute; 
     top: 50%; right: 0; transform: translateY(-50%);}
 #header .nav .depth1 > li { display: inline-block;}
 #header .nav .depth1 > li > a {
     font-size: 18px; padding: 0 40px;
-    font-family: 'Open Sans', sans-serif;}
+    }
 
 /* outlayer구역 */
 .outlayer { display: none;
@@ -113,18 +116,11 @@ body, html, #wrap { height: 100%;}
 
 
 /* about : section2 */
-.section-outer .section:nth-child(2) { background: yellowgreen;}
-.about{ height: 100%;
-    position: relative;}
-.about h2 {
-    position: absolute;
-    top: 50%; right: 0;
-    font-size: 40px;
-    transform: rotate(90deg) translate(-50%);
-    background: red;
+.section-outer .section:nth-child(2) {}
+.about h2 { 
+    font-size: 3.75vw;
+    text-align: center;
 }
-
-
 
 
 
