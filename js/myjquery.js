@@ -80,7 +80,14 @@
         fade: false,
         arrows: true,
         prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
-        nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>'
+        nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
+        responsive: [{
+            breakpoint: 701,
+            settings: {
+                arrows: false,
+                fade: true
+            }
+        }]
     })
 
     // toggle메서드를 사용하기 위해서는 jquery-migrate-1.4.1.min.js을 연결해야함
