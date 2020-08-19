@@ -61,9 +61,9 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif;}
     background-position: center;
     position: relative;}
 .section-outer .section:nth-child(1) .slide1 {
-    background-image: url(../images/sample1.jpg);}
+    background-image: url(../images/slide1.jpg);}
 .section-outer .section:nth-child(1) .slide2 {
-    background-image: url(../images/sample2.jpg);}
+    background-image: url(../images/slide2.jpg);}
 /* 화살표 버튼 */
 .slide-outer { position:relative;}
 .slide-outer .marrow { 
