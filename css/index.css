@@ -131,25 +131,19 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif;}
     animation: fadeInUp 1s both 1s;
 }
 /* about : section2 */
-/* .about h2 { 
-    font-size: 3.75vw;
-    text-align: center;
-    padding: 30px 0;} */
 .about .profile > div { 
     float: left; width: 50%;}
 .about .profile .pf-text {
     padding-left: 50px;
 }
+.about .profile .pf-text h3 { font-size: 35px;}
+
+
 
 
 /* portfolio : section3 */
 .section-outer .section:nth-child(3) { background: wheat;}
-/* .portfolio h2 {
-    font-size: 3.75vw;
-    text-align: center;
-    padding: 30px 0;
-}
- */
+
 
 
 
